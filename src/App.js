@@ -8,3 +8,9 @@ const App = () => {
 };
 
 export default App;
+
+const script = `
+  document.getElementById('shareButton').addEventListener('click', function() {
+    window.ReactNativeWebView.postMessage('share');
+  });
+`;
